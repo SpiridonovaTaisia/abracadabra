@@ -8,6 +8,6 @@ COPY src/ /app/
 
 WORKDIR /app
 
-RUN chmod +x /app
+RUN chmod +x /app/run.sh
 
-CMD python -m flask --app main run --host=0.0.0.0
+CMD ./run.sh
