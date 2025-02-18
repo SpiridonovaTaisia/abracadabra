@@ -10,4 +10,4 @@ WORKDIR /app
 
 RUN chmod +x /app/run.sh
 
-CMD ./run.sh
+CMD ["flask", "--app", "main", "run", "--host=0.0.0.0"]
